@@ -3,7 +3,9 @@
 </template>
 <script setup>
 const { $toast } = useNuxtApp();
-$toast.success("😃 Yay!!!");
-$toast.warning("😬 Oops!!!");
-$toast.error("😟 Ehhhh!!!");
+onMounted(() => {
+  $toast.success("😃 Yay!!!");
+  $toast.warning("😬 Oops!!!");
+  $toast.error("😟 Ehhhh!!!");
+});
 </script>
